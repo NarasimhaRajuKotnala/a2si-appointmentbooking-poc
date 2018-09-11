@@ -1,0 +1,17 @@
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/DateUtils.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/PatientAddressBuilder.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/ObservationEntityToFHIRObservationTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/LocationEntityToFHIRLocationTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/PractitionerEntityToFHIRPractitionerTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/LocationEntityBuilder.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/jpatest/JPAStepsDef.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/BaseAddressToFHIRAddressTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/jpatest/JPATestIT.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/OrganisationEntityBuilder.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/PatientEntityToFHIRPatientTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/term/TerminologyLoaderTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/term/TerminologyLoaderTestIT.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/PractitionerEntityBuilder.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/OrganisationEntityToFHIROrganizationTransformerTest.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/ObservationEntityBuilder.java
+/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/src/test/java/uk/nhs/careconnect/ri/daointerface/transforms/builder/PatientEntityBuilder.java

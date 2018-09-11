@@ -1,0 +1,3 @@
+uk/nhs/careconnect/ri/gateway/http/FHIRServerTest.class
+uk/nhs/careconnect/ri/gateway/http/RandomServerPortProvider.class
+uk/nhs/careconnect/ri/gateway/http/InterceptorRESTfulSteps.class

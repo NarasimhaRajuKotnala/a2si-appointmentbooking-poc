@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="uk.nhs.careconnect.ri.jpatest.JPATestIT" time="34.98" tests="286" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/test-classes:/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/ccri-dao-stu3-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.5.7.RELEASE/spring-boot-starter-data-jpa-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter/1.5.7.RELEASE/spring-boot-starter-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot/1.5.7.RELEASE/spring-boot-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.7.RELEASE/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.5.7.RELEASE/spring-boot-starter-logging-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.5.7.RELEASE/spring-boot-starter-aop-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.5.7.RELEASE/spring-boot-starter-jdbc-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.5.20/tomcat-jdbc-8.5.20.jar:/Users/narasimhakotnala/.m2/repository/org/apache/tomcat/tomcat-juli/8.5.20/tomcat-juli-8.5.20.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-jdbc/4.3.11.RELEASE/spring-jdbc-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/narasimhakotnala/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/narasimhakotnala/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/narasimhakotnala/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/Users/narasimhakotnala/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/narasimhakotnala/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar:/Users/narasimhakotnala/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/data/spring-data-jpa/1.11.7.RELEASE/spring-data-jpa-1.11.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-orm/4.3.11.RELEASE/spring-orm-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-expression/4.3.11.RELEASE/spring-expression-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-aspects/4.3.11.RELEASE/spring-aspects-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.5.7.RELEASE/spring-boot-starter-test-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-test/1.5.7.RELEASE/spring-boot-test-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/Users/narasimhakotnala/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/Users/narasimhakotnala/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/Users/narasimhakotnala/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/narasimhakotnala/.m2/repository/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar:/Users/narasimhakotnala/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/Users/narasimhakotnala/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/narasimhakotnala/.m2/repository/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-c3p0/5.2.17.Final/hibernate-c3p0-5.2.17.Final.jar:/Users/narasimhakotnala/.m2/repository/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar:/Users/narasimhakotnala/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar:/Users/narasimhakotnala/.m2/repository/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar:/Users/narasimhakotnala/Documents/a2si-appointments-poc/cc-core/target/cc-core-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-base/3.4.0/hapi-fhir-base-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/narasimhakotnala/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-structures-hl7org-dstu2/3.4.0/hapi-fhir-structures-hl7org-dstu2-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/narasimhakotnala/.m2/repository/net/sf/saxon/Saxon-HE/9.5.1-5/Saxon-HE-9.5.1-5.jar:/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-database/target/ccri-database-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar:/Users/narasimhakotnala/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/narasimhakotnala/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/slf4j-jdk14/1.7.25/slf4j-jdk14-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/Users/narasimhakotnala/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/narasimhakotnala/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/narasimhakotnala/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/narasimhakotnala/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/narasimhakotnala/.m2/repository/org/flywaydb/flyway-core/4.2.0/flyway-core-4.2.0.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-spring/1.2.5/cucumber-spring-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/narasimhakotnala/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/narasimhakotnala/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-server/3.4.0/hapi-fhir-server-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-structures-dstu3/3.4.0/hapi-fhir-structures-dstu3-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-utilities/3.4.0/hapi-fhir-utilities-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/commons-codec/commons-codec/1.1/commons-codec-1.1.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-validation-resources-dstu3/3.4.0/hapi-fhir-validation-resources-dstu3-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/phloc/phloc-commons/4.4.11/phloc-commons-4.4.11.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/surefire/surefirebooter3146130306373588323.jar /Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/surefire 2018-09-07T14-52-09_426-jvmRun1 surefire2384951659416806771tmp surefire_03750426476858617100tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/test-classes:/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/ccri-dao-stu3-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.5.7.RELEASE/spring-boot-starter-data-jpa-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter/1.5.7.RELEASE/spring-boot-starter-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot/1.5.7.RELEASE/spring-boot-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.7.RELEASE/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.5.7.RELEASE/spring-boot-starter-logging-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.5.7.RELEASE/spring-boot-starter-aop-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.5.7.RELEASE/spring-boot-starter-jdbc-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.5.20/tomcat-jdbc-8.5.20.jar:/Users/narasimhakotnala/.m2/repository/org/apache/tomcat/tomcat-juli/8.5.20/tomcat-juli-8.5.20.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-jdbc/4.3.11.RELEASE/spring-jdbc-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/narasimhakotnala/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/narasimhakotnala/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/narasimhakotnala/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/Users/narasimhakotnala/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/narasimhakotnala/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar:/Users/narasimhakotnala/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/data/spring-data-jpa/1.11.7.RELEASE/spring-data-jpa-1.11.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-orm/4.3.11.RELEASE/spring-orm-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-expression/4.3.11.RELEASE/spring-expression-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-aspects/4.3.11.RELEASE/spring-aspects-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.5.7.RELEASE/spring-boot-starter-test-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-test/1.5.7.RELEASE/spring-boot-test-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/Users/narasimhakotnala/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/Users/narasimhakotnala/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/Users/narasimhakotnala/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/narasimhakotnala/.m2/repository/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar:/Users/narasimhakotnala/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/Users/narasimhakotnala/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/narasimhakotnala/.m2/repository/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar:/Users/narasimhakotnala/.m2/repository/org/hibernate/hibernate-c3p0/5.2.17.Final/hibernate-c3p0-5.2.17.Final.jar:/Users/narasimhakotnala/.m2/repository/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar:/Users/narasimhakotnala/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar:/Users/narasimhakotnala/.m2/repository/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar:/Users/narasimhakotnala/Documents/a2si-appointments-poc/cc-core/target/cc-core-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-base/3.4.0/hapi-fhir-base-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/narasimhakotnala/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-structures-hl7org-dstu2/3.4.0/hapi-fhir-structures-hl7org-dstu2-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/narasimhakotnala/.m2/repository/net/sf/saxon/Saxon-HE/9.5.1-5/Saxon-HE-9.5.1-5.jar:/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-database/target/ccri-database-3.6.0.a.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar:/Users/narasimhakotnala/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/narasimhakotnala/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/slf4j-jdk14/1.7.25/slf4j-jdk14-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/narasimhakotnala/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/Users/narasimhakotnala/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/narasimhakotnala/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/narasimhakotnala/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/narasimhakotnala/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/narasimhakotnala/.m2/repository/org/flywaydb/flyway-core/4.2.0/flyway-core-4.2.0.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-spring/1.2.5/cucumber-spring-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/narasimhakotnala/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/narasimhakotnala/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/narasimhakotnala/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/Users/narasimhakotnala/.m2/repository/org/hamcrest/java-hamcrest/2.0.0.0/java-hamcrest-2.0.0.0.jar:/Users/narasimhakotnala/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/narasimhakotnala/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/narasimhakotnala/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-server/3.4.0/hapi-fhir-server-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-structures-dstu3/3.4.0/hapi-fhir-structures-dstu3-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-utilities/3.4.0/hapi-fhir-utilities-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/commons-codec/commons-codec/1.1/commons-codec-1.1.jar:/Users/narasimhakotnala/.m2/repository/ca/uhn/hapi/fhir/hapi-fhir-validation-resources-dstu3/3.4.0/hapi-fhir-validation-resources-dstu3-3.4.0.jar:/Users/narasimhakotnala/.m2/repository/com/phloc/phloc-commons/4.4.11/phloc-commons-4.4.11.jar:/Users/narasimhakotnala/.m2/repository/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/narasimhakotnala"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3/target/surefire/surefirebooter3146130306373588323.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.name" value="narasimhakotnala"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.13.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/narasimhakotnala/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/r2/7t5k8m4n6d329k2z73h_hvp80000gn/T/"/>
+    <property name="idea.version" value="2018.2.1"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="user.dir" value="/Users/narasimhakotnala/Documents/a2si-appointments-poc/ccri-dao-stu3"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/narasimhakotnala/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.ext.dirs" value="/Users/narasimhakotnala/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Given I have one AllergyIntolerance resource loaded" classname="Scenario: AllergyIntolerance Patient" time="0"/>
+  <testcase name="When I search AllergyIntolerance on Patient ID = 1" classname="Scenario: AllergyIntolerance Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of AllergyIntolerance 2 resource" classname="Scenario: AllergyIntolerance Patient" time="0"/>
+  <testcase name="Scenario: AllergyIntolerance Patient" classname="Scenario: AllergyIntolerance Patient" time="0.001"/>
+  <testcase name="Given I have one AllergyIntolerance resource loaded" classname="Scenario: AllergyIntolerance Patient Conditional" time="0"/>
+  <testcase name="When I update this AllergyIntolerance" classname="Scenario: AllergyIntolerance Patient Conditional" time="0"/>
+  <testcase name="Then I search AllergyIntolerance on Patient ID = 1" classname="Scenario: AllergyIntolerance Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of AllergyIntolerance 1 resource" classname="Scenario: AllergyIntolerance Patient Conditional" time="0"/>
+  <testcase name="Scenario: AllergyIntolerance Patient Conditional" classname="Scenario: AllergyIntolerance Patient Conditional" time="0"/>
+  <testcase name="Given I have one CarePlan resource loaded" classname="Scenario: CarePlan Patient" time="0"/>
+  <testcase name="When I search CarePlan on Patient ID = 1" classname="Scenario: CarePlan Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of CarePlan 1 resource" classname="Scenario: CarePlan Patient" time="0"/>
+  <testcase name="Scenario: CarePlan Patient" classname="Scenario: CarePlan Patient" time="0"/>
+  <testcase name="Given I add a dummy codesystem" classname="Scenario: CodeSystem" time="0.001"/>
+  <testcase name="Then the CodeSystem should save" classname="Scenario: CodeSystem" time="0"/>
+  <testcase name="Scenario: CodeSystem" classname="Scenario: CodeSystem" time="0"/>
+  <testcase name="Given I have one Condition resource loaded" classname="Scenario: Condition Patient" time="0"/>
+  <testcase name="When I search Condition on Patient ID = 1" classname="Scenario: Condition Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of Condition 2 resource" classname="Scenario: Condition Patient" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Conditions" classname="Scenario: Condition Patient" time="0"/>
+  <testcase name="Scenario: Condition Patient" classname="Scenario: Condition Patient" time="0.001"/>
+  <testcase name="Given I have one Condition resource loaded" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="When I update this Condition" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="Then I search Condition on Patient ID = 1" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of Condition 1 resource" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Conditions" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="Scenario: Condition Patient Conditional" classname="Scenario: Condition Patient Conditional" time="0"/>
+  <testcase name="Given I have one DocumentReference resource loaded" classname="Scenario: DocumentReference Patient" time="0"/>
+  <testcase name="When I get DocumentReference ID = 1" classname="Scenario: DocumentReference Patient" time="0"/>
+  <testcase name="Then I should get a DocumentReference resource" classname="Scenario: DocumentReference Patient" time="0"/>
+  <testcase name="Scenario: DocumentReference Patient" classname="Scenario: DocumentReference Patient" time="0.001"/>
+  <testcase name="Given I have one Encounter resource loaded" classname="Scenario: Encounter Patient" time="0"/>
+  <testcase name="When I search Encounter on Patient ID = 1" classname="Scenario: Encounter Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of Encounter 1 resource" classname="Scenario: Encounter Patient" time="0"/>
+  <testcase name="Scenario: Encounter Patient" classname="Scenario: Encounter Patient" time="0"/>
+  <testcase name="Given I have one Encounter resource loaded" classname="Scenario: Encounter Patient Conditional" time="0"/>
+  <testcase name="When I update this Encounter" classname="Scenario: Encounter Patient Conditional" time="0"/>
+  <testcase name="Then I search Encounter on Patient ID = 1" classname="Scenario: Encounter Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of Encounter 0 resource" classname="Scenario: Encounter Patient Conditional" time="0"/>
+  <testcase name="Scenario: Encounter Patient Conditional" classname="Scenario: Encounter Patient Conditional" time="0"/>
+  <testcase name="Given I have one Immunisation resource loaded" classname="Scenario: Immunisation Patient" time="0"/>
+  <testcase name="When I search Immunisation on Patient ID = 2" classname="Scenario: Immunisation Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of Immunisation 1 resource" classname="Scenario: Immunisation Patient" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Immunizations" classname="Scenario: Immunisation Patient" time="0"/>
+  <testcase name="Scenario: Immunisation Patient" classname="Scenario: Immunisation Patient" time="0"/>
+  <testcase name="Given I have one Immunisation resource loaded" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="When I update this Immunisation" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="Then I search Immunisation on Patient ID = 2" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of Immunisation 0 resource" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="Then I search Immunisation on Patient ID = 3" classname="Scenario: Immunisation Patient Conditional" time="0.001"/>
+  <testcase name="Then I should get a Bundle of Immunisation 1 resource" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Immunizations" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="Scenario: Immunisation Patient Conditional" classname="Scenario: Immunisation Patient Conditional" time="0"/>
+  <testcase name="Given I have one List resource loaded" classname="Scenario: List Patient" time="0"/>
+  <testcase name="When I search List on Patient ID = 1" classname="Scenario: List Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of List 1 resource" classname="Scenario: List Patient" time="0"/>
+  <testcase name="Scenario: List Patient" classname="Scenario: List Patient" time="0"/>
+  <testcase name="Given I search for Locations by SDSCode RTG08" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Then the result should be a Location list with 1 entry" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="And they shall all be FHIR Location resources" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Locations" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Location Search by SDS Code" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Location Search by SDS Code" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Given I search for Locations by SDSCode 12RTG081010" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Then the result should be a Location list with 0 entry" classname="Scenario: Location Search by SDS Code" time="0"/>
+  <testcase name="Given I search for Locations by name Long" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Then the result should be a Location list with 1 entry" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="And they shall all be FHIR Location resources" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Locations" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Scenario: Location Search by Name" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Scenario: Location Search by Name" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Given I search for Locations by name LONG" classname="Scenario: Location Search by Name Mixed case" time="0"/>
+  <testcase name="Then the result should be a Location list with 1 entry" classname="Scenario: Location Search by Name Mixed case" time="0"/>
+  <testcase name="And they shall all be FHIR Location resources" classname="Scenario: Location Search by Name Mixed case" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Locations" classname="Scenario: Location Search by Name Mixed case" time="0"/>
+  <testcase name="Scenario: Location Search by Name Mixed case" classname="Scenario: Location Search by Name Mixed case" time="0.001"/>
+  <testcase name="Given I search for Locations by name xanadu" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Then the result should be a Location list with 0 entry" classname="Scenario: Location Search by Name" time="0"/>
+  <testcase name="Given Location resource file" classname="Scenario: Location Load" time="0"/>
+  <testcase name="Then save the location" classname="Scenario: Location Load" time="0"/>
+  <testcase name="Scenario: Location Load" classname="Scenario: Location Load" time="0"/>
+  <testcase name="Given I have one MedicationRequest resource loaded" classname="Scenario: MedicationRequest Patient" time="0"/>
+  <testcase name="When I search MedicationRequest on Patient ID = 2" classname="Scenario: MedicationRequest Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of MedicationRequest 1 resource" classname="Scenario: MedicationRequest Patient" time="0"/>
+  <testcase name="And the results should be a list of CareConnect MedicationRequests" classname="Scenario: MedicationRequest Patient" time="0"/>
+  <testcase name="Scenario: MedicationRequest Patient" classname="Scenario: MedicationRequest Patient" time="0"/>
+  <testcase name="Given I have one MedicationRequest resource loaded" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="When I update this MedicationRequest" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="Then I search MedicationRequest on Patient ID = 2" classname="Scenario: MedicationRequest Patient Conditional" time="0.001"/>
+  <testcase name="Then I should get a Bundle of MedicationRequest 0 resource" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="Then I search MedicationRequest on Patient ID = 3" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of MedicationRequest 1 resource" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="And the results should be a list of CareConnect MedicationRequests" classname="Scenario: MedicationRequest Patient Conditional" time="0"/>
+  <testcase name="Scenario: MedicationRequest Patient Conditional" classname="Scenario: MedicationRequest Patient Conditional" time="0.001"/>
+  <testcase name="Given I have one MedicationStatement resource loaded" classname="Scenario: MedicationStatement Patient" time="0"/>
+  <testcase name="When I get MedicationStatement ID = 1" classname="Scenario: MedicationStatement Patient" time="0"/>
+  <testcase name="Then I should get a MedicationStatement resource" classname="Scenario: MedicationStatement Patient" time="0"/>
+  <testcase name="Scenario: MedicationStatement Patient" classname="Scenario: MedicationStatement Patient" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search Patient" time="0"/>
+  <testcase name="When I search on Patient ID = 1" classname="Scenario: Observation Search Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with more then 2 resources" classname="Scenario: Observation Search Patient" time="0"/>
+  <testcase name="Scenario: Observation Search Patient" classname="Scenario: Observation Search Patient" time="0"/>
+  <testcase name="Given Observation resource file" classname="Scenario: Observation Post" time="0"/>
+  <testcase name="Then save the Observation" classname="Scenario: Observation Post" time="0.001"/>
+  <testcase name="Scenario: Observation Post" classname="Scenario: Observation Post" time="0.001"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search Smoking Status Category" time="0"/>
+  <testcase name="When I search Observations on SNOMED category 228272008" classname="Scenario: Observation Search Smoking Status Category" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 1 resource" classname="Scenario: Observation Search Smoking Status Category" time="0"/>
+  <testcase name="Scenario: Observation Search Smoking Status Category" classname="Scenario: Observation Search Smoking Status Category" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search BMI Code" time="0"/>
+  <testcase name="When I search Observations on SNOMED code 301331008" classname="Scenario: Observation Search BMI Code" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 1 resource" classname="Scenario: Observation Search BMI Code" time="0"/>
+  <testcase name="Scenario: Observation Search BMI Code" classname="Scenario: Observation Search BMI Code" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search date less than" time="0"/>
+  <testcase name="When I search on dates less than 1999-08-02" classname="Scenario: Observation Search date less than" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 1 resource" classname="Scenario: Observation Search date less than" time="0"/>
+  <testcase name="Scenario: Observation Search date less than" classname="Scenario: Observation Search date less than" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search date equal yyyymmdd" time="0.001"/>
+  <testcase name="When I search on dates equal to 1999-08-03" classname="Scenario: Observation Search date equal yyyymmdd" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 1 resource" classname="Scenario: Observation Search date equal yyyymmdd" time="0"/>
+  <testcase name="Scenario: Observation Search date equal yyyymmdd" classname="Scenario: Observation Search date equal yyyymmdd" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search date equal yyyymm" time="0"/>
+  <testcase name="When I search on dates equal to 1999-08" classname="Scenario: Observation Search date equal yyyymm" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 1 resource" classname="Scenario: Observation Search date equal yyyymm" time="0"/>
+  <testcase name="Scenario: Observation Search date equal yyyymm" classname="Scenario: Observation Search date equal yyyymm" time="0"/>
+  <testcase name="Given I have two sample resources loaded" classname="Scenario: Observation Search date equal yyyy" time="0"/>
+  <testcase name="When I search on dates equal to 1999" classname="Scenario: Observation Search date equal yyyy" time="0"/>
+  <testcase name="Then I should get a Bundle of Observations with 2 resource" classname="Scenario: Observation Search date equal yyyy" time="0"/>
+  <testcase name="Scenario: Observation Search date equal yyyy" classname="Scenario: Observation Search date equal yyyy" time="0"/>
+  <testcase name="Given I search for Organisations by SDSCode C81010" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="Then the result should be a organisation list with 1 entry" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="And they shall all be FHIR Organization resources" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Organisations" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Organisation Search by SDS Code" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Organisation Search by SDS Code" classname="Scenario: Organisation Search by SDS Code" time="0.001"/>
+  <testcase name="Given I search for Organisations by SDSCode 12345681010" classname="Scenario: Organisation Search by SDS Code" time="0"/>
+  <testcase name="Then the result should be a organisation list with 0 entry" classname="Scenario: Organisation Search by SDS Code" time="0.001"/>
+  <testcase name="Given I search for Organisations by name the" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Then the result should be a organisation list with 1 entry" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="And they shall all be FHIR Organization resources" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Organisations" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Scenario: Organisation Search by Name" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Scenario: Organisation Search by Name" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Given I search for Organisations by name ThE" classname="Scenario: Organisation Search by Name Mixed case" time="0"/>
+  <testcase name="Then the result should be a organisation list with 1 entry" classname="Scenario: Organisation Search by Name Mixed case" time="0"/>
+  <testcase name="And they shall all be FHIR Organization resources" classname="Scenario: Organisation Search by Name Mixed case" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Organisations" classname="Scenario: Organisation Search by Name Mixed case" time="0"/>
+  <testcase name="Scenario: Organisation Search by Name Mixed case" classname="Scenario: Organisation Search by Name Mixed case" time="0"/>
+  <testcase name="Given I search for Organisations by name xanadu" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Then the result should be a organisation list with 0 entry" classname="Scenario: Organisation Search by Name" time="0"/>
+  <testcase name="Given I add a Patient with an Id of 1" classname="Scenario: Patient Read" time="0"/>
+  <testcase name="Then the result should be a FHIR Patient" classname="Scenario: Patient Read" time="0"/>
+  <testcase name="And the results should be a CareConnect Patient" classname="Scenario: Patient Read" time="0"/>
+  <testcase name="Scenario: Patient Read" classname="Scenario: Patient Read" time="0"/>
+  <testcase name="Given I search for a Patient with a family name of Kanfeld" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="Scenario: Patient first name Search Found" classname="Scenario: Patient first name Search Found" time="0.001"/>
+  <testcase name="Scenario: Patient first name Search Found" classname="Scenario: Patient first name Search Found" time="0.001"/>
+  <testcase name="Given I search for a Patient with a family name of KanFelD" classname="Scenario: Patient first name mixed case Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient first name mixed case Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient first name mixed case Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient first name mixed case Search Found" time="0"/>
+  <testcase name="Scenario: Patient first name mixed case Search Found" classname="Scenario: Patient first name mixed case Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a family name of Schmidt" classname="Scenario: Patient first name Search NOT Found" time="0.001"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient first name Search NOT Found" time="0"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient first name Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient first name Search NOT Found" classname="Scenario: Patient first name Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient first name Search NOT Found" classname="Scenario: Patient first name Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a given name of Bernie" classname="Scenario: Patient first name Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a given name of Eric" classname="Scenario: Patient first name Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a birthdate of &apos;1998-03-19&apos;" classname="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" time="0.001"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" time="0"/>
+  <testcase name="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" classname="Scenario: Patient birthdate name Search Found &apos;1998-03-19&apos;" time="0"/>
+  <testcase name="Given I search for a Patient with a birthdate of &apos;1918-02-17&apos;" classname="Scenario: Patient birthdate Search NOT Found" time="0.001"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient birthdate Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient birthdate Search NOT Found" classname="Scenario: Patient birthdate Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a gender of FEMALE" classname="Scenario: Patient gender Search Female" time="0"/>
+  <testcase name="Then the result should be a list with several entries" classname="Scenario: Patient gender Search Female" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient gender Search Female" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient gender Search Female" time="0"/>
+  <testcase name="Scenario: Patient gender Search Female" classname="Scenario: Patient gender Search Female" time="0.001"/>
+  <testcase name="Given I search for a Patient with a gender of MALE" classname="Scenario: Patient gender Search Male" time="0"/>
+  <testcase name="Then the result should be a list with several entries" classname="Scenario: Patient gender Search Male" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient gender Search Male" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient gender Search Male" time="0"/>
+  <testcase name="Scenario: Patient gender Search Male" classname="Scenario: Patient gender Search Male" time="0"/>
+  <testcase name="Given I search for a Patient with a NHSNumber of 9876543210" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="Scenario: Patient identifier Search Found" classname="Scenario: Patient identifier Search Found" time="0.001"/>
+  <testcase name="Scenario: Patient identifier Search Found" classname="Scenario: Patient identifier Search Found" time="0.001"/>
+  <testcase name="Given I search for a Patient with a NHSNumber of 1234567890" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient identifier Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a name of &quot;Bernie&quot;(Scenario: Patient name " classname="given supplied) Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry(Scenario: Patient name " classname="given supplied) Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources(Scenario: Patient name " classname="given supplied) Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients(Scenario: Patient name " classname="given supplied) Search Found" time="0"/>
+  <testcase name="Scenario: Patient name " classname="Scenario: Patient name (given supplied) Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a name of &quot;Kanfeld&quot;(Scenario: Patient name " classname="family supplied) Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry(Scenario: Patient name " classname="family supplied) Search Found" time="0"/>
+  <testcase name="And they shall all be FHIR Patient resources(Scenario: Patient name " classname="family supplied) Search Found" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Patients(Scenario: Patient name " classname="family supplied) Search Found" time="0"/>
+  <testcase name="Scenario: Patient name " classname="Scenario: Patient name (family supplied) Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a name of &quot;Loki&quot;" classname="Scenario: Patient name Search NOT Found" time="0.001"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient name Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient name Search NOT Found" classname="Scenario: Patient name Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a email of &quot;bernie.kanfeld@nhsdigital.nhs.uk&quot;" classname="Scenario: Patient email Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient email Search Found" time="0"/>
+  <testcase name="Scenario: Patient email Search Found" classname="Scenario: Patient email Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a address-postcode of &quot;NG10 1ZZ&quot;" classname="Scenario: Patient POSTCODE Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient POSTCODE Search Found" time="0"/>
+  <testcase name="Scenario: Patient POSTCODE Search Found" classname="Scenario: Patient POSTCODE Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a address-postcode of &quot;NG10&quot;" classname="Scenario: Patient POSTCODE Part Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient POSTCODE Part Search Found" time="0"/>
+  <testcase name="Scenario: Patient POSTCODE Part Search Found" classname="Scenario: Patient POSTCODE Part Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a phone of &quot;0115 9737320&quot;" classname="Scenario: Patient PHONE Search Found" time="0"/>
+  <testcase name="Then the result should be a list with 1 entry" classname="Scenario: Patient PHONE Search Found" time="0"/>
+  <testcase name="Scenario: Patient PHONE Search Found" classname="Scenario: Patient PHONE Search Found" time="0"/>
+  <testcase name="Given I search for a Patient with a email of &quot;kevin.mayfield@airelogic.com&quot;" classname="Scenario: Patient email Search NOT Found" time="0"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient email Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient email Search NOT Found" classname="Scenario: Patient email Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a address-postcode of &quot;LS15 8FR&quot;" classname="Scenario: Patient POSTCODE Search NOT Found" time="0"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient POSTCODE Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient POSTCODE Search NOT Found" classname="Scenario: Patient POSTCODE Search NOT Found" time="0"/>
+  <testcase name="Given I search for a Patient with a phone of &quot;0113 9737320&quot;" classname="Scenario: Patient PHONE Search NOT Found" time="0"/>
+  <testcase name="Then the result should be a list with 0 entry" classname="Scenario: Patient PHONE Search NOT Found" time="0"/>
+  <testcase name="Scenario: Patient PHONE Search NOT Found" classname="Scenario: Patient PHONE Search NOT Found" time="0"/>
+  <testcase name="When I Conditional add a Patient" classname="Scenario: Patient Conditional" time="0"/>
+  <testcase name="Then I search Patient on Patient PPMID = 1101" classname="Scenario: Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of Patient 1 resource" classname="Scenario: Patient Conditional" time="0"/>
+  <testcase name="Scenario: Patient Conditional" classname="Scenario: Patient Conditional" time="0"/>
+  <testcase name="Given PractitionerRole resource file" classname="Scenario: PractitionerRole Load" time="0"/>
+  <testcase name="Then save the PractitionerRole" classname="Scenario: PractitionerRole Load" time="0"/>
+  <testcase name="Scenario: PractitionerRole Load" classname="Scenario: PractitionerRole Load" time="0"/>
+  <testcase name="Given I search for Practitioners by SDSId G8133438" classname="Scenario: Practitioner Search by SDS Code" time="0.001"/>
+  <testcase name="Then the result should be a practitioner list with 1 entry" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="And they shall all be FHIR Practitioner resources" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Practitioners" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Practitioner Search by SDS Code" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="Scenario: Practitioner Search by SDS Code" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="Given I search for Practitioners by SDSId S8133438" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="Then the result should be a practitioner list with 0 entry" classname="Scenario: Practitioner Search by SDS Code" time="0"/>
+  <testcase name="Given I search for Practitioners by name Bhatia" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="Then the result should be a practitioner list with 1 entry" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="And they shall all be FHIR Practitioner resources" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Practitioners" classname="Scenario: Practitioner Search by Name" time="0.001"/>
+  <testcase name="Scenario: Practitioner Search by Name" classname="Scenario: Practitioner Search by Name" time="0.001"/>
+  <testcase name="Scenario: Practitioner Search by Name" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="Given I search for Practitioners by name BHATIA" classname="Scenario: Practitioner Search by Name Mixed case" time="0"/>
+  <testcase name="Then the result should be a practitioner list with 1 entry" classname="Scenario: Practitioner Search by Name Mixed case" time="0"/>
+  <testcase name="And they shall all be FHIR Practitioner resources" classname="Scenario: Practitioner Search by Name Mixed case" time="0"/>
+  <testcase name="And the results should be a list of CareConnect Practitioners" classname="Scenario: Practitioner Search by Name Mixed case" time="0"/>
+  <testcase name="Scenario: Practitioner Search by Name Mixed case" classname="Scenario: Practitioner Search by Name Mixed case" time="0"/>
+  <testcase name="Given I search for Practitioners by name xanadu" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="Then the result should be a practitioner list with 0 entry" classname="Scenario: Practitioner Search by Name" time="0"/>
+  <testcase name="Given I have one Procedure resource loaded" classname="Scenario: Procedure Patient" time="0"/>
+  <testcase name="When I search Procedure on Patient ID = 1" classname="Scenario: Procedure Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of Procedure 2 resource" classname="Scenario: Procedure Patient" time="0"/>
+  <testcase name="Scenario: Procedure Patient" classname="Scenario: Procedure Patient" time="0.001"/>
+  <testcase name="Given I have one Procedure resource loaded" classname="Scenario: Procedure Patient Conditional" time="0"/>
+  <testcase name="When I update this Procedure" classname="Scenario: Procedure Patient Conditional" time="0"/>
+  <testcase name="Then I search Procedure on Patient ID = 1" classname="Scenario: Procedure Patient Conditional" time="0"/>
+  <testcase name="Then I should get a Bundle of Procedure 1 resource" classname="Scenario: Procedure Patient Conditional" time="0"/>
+  <testcase name="Scenario: Procedure Patient Conditional" classname="Scenario: Procedure Patient Conditional" time="0"/>
+  <testcase name="Given I have one QuestionnaireResponse resource loaded" classname="Scenario: QuestionnaireResponse Patient" time="0"/>
+  <testcase name="When I search QuestionnaireResponse on Patient ID = 1" classname="Scenario: QuestionnaireResponse Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of QuestionnaireResponse 1 resource" classname="Scenario: QuestionnaireResponse Patient" time="0"/>
+  <testcase name="Scenario: QuestionnaireResponse Patient" classname="Scenario: QuestionnaireResponse Patient" time="0"/>
+  <testcase name="Given I have one RiskAssessment resource loaded" classname="Scenario: RiskAssessment Patient" time="0"/>
+  <testcase name="When I search RiskAssessment on Patient ID = 1" classname="Scenario: RiskAssessment Patient" time="0"/>
+  <testcase name="Then I should get a Bundle of RiskAssessment 1 resource" classname="Scenario: RiskAssessment Patient" time="0"/>
+  <testcase name="Scenario: RiskAssessment Patient" classname="Scenario: RiskAssessment Patient" time="0"/>
+  <testcase name="Given I add a ValueSet with an Id of CareConnect-EthnicCategory-1" classname="Scenario: ValueSet Read" time="0"/>
+  <testcase name="Then the result should be a FHIR ValueSet" classname="Scenario: ValueSet Read" time="0"/>
+  <testcase name="Then the result should be a FHIR ValueSet" classname="Scenario: ValueSet Read" time="0"/>
+  <testcase name="Scenario: ValueSet Read" classname="Scenario: ValueSet Read" time="0"/>
+  <testcase name="Scenario: ValueSet Read" classname="Scenario: ValueSet Read" time="0"/>
+  <testcase name="Given I add a ValueSet with an Id of CareConnect-AllergySeverity-1" classname="Scenario: ValueSet Read" time="0"/>
+</testsuite>

@@ -1,0 +1,4 @@
+uk/nhs/careconnect/ri/a2si/http/Config.class
+uk/nhs/careconnect/ri/a2si/http/CamelRoute.class
+uk/nhs/careconnect/ri/a2si/http/CamelConfig.class
+uk/nhs/careconnect/ri/a2si/http/HAPIRestfulConfig.class

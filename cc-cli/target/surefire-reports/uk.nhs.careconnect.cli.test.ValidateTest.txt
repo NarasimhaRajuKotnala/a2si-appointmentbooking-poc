@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: uk.nhs.careconnect.cli.test.ValidateTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.649 s - in uk.nhs.careconnect.cli.test.ValidateTest

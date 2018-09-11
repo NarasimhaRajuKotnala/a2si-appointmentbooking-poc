@@ -1,0 +1,15 @@
+uk/org/hl7/fhir/core/Dstu2/CareConnectSystem.class
+uk/org/hl7/fhir/core/Stu3/CareConnectExtension.class
+uk/org/hl7/fhir/core/Dstu2/CareConnectExtension.class
+uk/org/hl7/fhir/core/Dstu2/CareConnectAuditEvent.class
+uk/org/hl7/fhir/validation/NhsCodeValidator.class
+uk/org/hl7/fhir/core/Stu3/CareConnectAuditEvent$1.class
+uk/nhs/careconnect/fhir/OperationOutcomeException.class
+uk/org/hl7/fhir/core/Stu3/CareConnectProfile.class
+uk/org/hl7/fhir/validation/stu3/SNOMEDUKMockValidationSupport.class
+uk/org/hl7/fhir/core/Dstu2/CareConnectAuditEvent$1.class
+uk/org/hl7/fhir/core/Stu3/CareConnectITKProfile.class
+uk/org/hl7/fhir/core/Dstu2/CareConnectProfile.class
+uk/org/hl7/fhir/core/Stu3/CareConnectSystem.class
+uk/org/hl7/fhir/core/Stu3/CareConnectAuditEvent.class
+uk/org/hl7/fhir/validation/stu3/CareConnectProfileValidationSupport.class

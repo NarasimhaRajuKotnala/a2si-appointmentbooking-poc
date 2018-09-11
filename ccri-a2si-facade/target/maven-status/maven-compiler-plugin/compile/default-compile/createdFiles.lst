@@ -1,0 +1,6 @@
+uk/nhs/careconnect/ri/facade/ccrifhir/CcriFhirApplication.class
+uk/nhs/careconnect/ri/facade/ccrifhir/LoggingConfig.class
+uk/nhs/careconnect/ri/facade/ccrifhir/CcriTieServerHAPIConfig.class
+uk/nhs/careconnect/ri/facade/ccrifhir/CcriFhirApplication$1.class
+uk/nhs/careconnect/ri/facade/ccrifhir/CamelRoute.class
+uk/nhs/careconnect/ri/facade/ccrifhir/CamelConfig.class
